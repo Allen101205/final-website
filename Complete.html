@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fadbd8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        main > section {
+            display: none;
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .active-section {
+            display: block;
+        }
+
+        aside {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        aside img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        ul li a:link {
+            color: #007bff;
+        }
+
+        ul li a:visited {
+            color: #800080;
+        }
+
+        ul li a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        ul li a:active {
+            background-color: #ff0000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Life</h1>
+        <p>I am Allen Villanueva, 19 yrs old</p>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About Us</a>
+        <a onclick="showSection('gallery')">Gallery</a>
+        <a onclick="showSection('myspace')">My Space</a>
+        <a onclick="showSection('contact')">Contact Us</a>
+    </nav>
+
+    <main>
+        <section id="home" class="active-section">
+    <h2>Home</h2>
+    <p>Welcome to my life website! Explore and know me better.</p>
+
+    <div class="gallery-grid">
+        <img src="C:\Users\Tyshaun\Downloads\3c4dd62a-5240-43e2-a59f-d1eea9376110.jpg" alt="Image 1" style="width:100%; border-radius: 10px;">
+        <img src="C:\Users\Tyshaun\Downloads\f012354c-2097-4ebd-9ed7-5ae6047d9aef.jpg" alt="Image 2" style="width:100%; border-radius: 10px;">
+        <img src="C:\Users\Tyshaun\Downloads\12c96ba7-18aa-412e-b6b9-83bea63cacd5.jpg" alt="Image 3" style="width:100%; border-radius: 10px;">
+        <img src="C:\Users\Tyshaun\Downloads\483719196_1633166107560420_736357484242543562_n.jpg" alt="Image 4" style="width:100%; border-radius: 10px;">
+    </div>
+</section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My nickname is Allen. I'm the eldest of my two siblings. I live in Sta. Mesa, Manila.</p>
+            <p>My motto in life is "Nothing is impossible with love."</p>
+            <p>My dream is to become a successful programmer and have a happy, stable life.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Pinterest Images -->
+                <iframe src="C:\Users\Tyshaun\Downloads\1.jpg"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\2.jpg"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\3.jpg"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\4.jpg"></iframe>
+
+                <!-- TikTok Videos -->
+                <iframe src="C:\Users\Tyshaun\Downloads\Download.mp4"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\Download (1).mp4"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\Download (2).mp4"></iframe>
+                <iframe src="C:\Users\Tyshaun\Downloads\Download (3).mp4"></iframe>
+            </div>
+        </section>
+
+        <section id="myspace">
+            <h2>My Space</h2>
+            <aside>
+                <h3>My Motivation</h3>
+                <img src="C:\Users\Tyshaun\Downloads\479710714_661595032889929_8960609580349762850_n (1).jpg" alt="Motivation">
+                <p>My girlfriend is my biggest motivation—she supports me in every battle in life.</p>
+                <p>My Active Accounts:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://adamson.blackboard.com/ultra/profile">Adamsonbb</a></li>
+                    <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you'd like to connect or ask anything, feel free to reach out via my social media accounts or contact me in this number 09664700090.</p>
+            <ul>
+                <li><a href="https://ph.pinterest.com/tyshaunallen12/">Pinterest</a></li>
+                <li><a href="https://www.messenger.com/t/100071316820790">Messenger</a></li>
+                <li><a href="https://www.instagram.com/shaun.___.v/">Instagram</a></li>
+            </ul>
+
+            <div class="map-container">
+                <h3>We're located at:</h3>
+                <p>900 San Marcelino St, Ermita, Manila</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.738764124554!2d120.98697541470312!3d14.58235768100756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca204a59d181%3A0x1d4b2d0618cfb5ed!2s900%20San%20Marcelino%20St%2C%20Ermita%2C%20Manila!5e0!3m2!1sen!2sph!4v1683437571721!5m2!1sen!2sph" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Life. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('main > section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+            document.getElementById(id).classList.add('active-section');
+        }
+    </script>
+
+</body>
+</html>
